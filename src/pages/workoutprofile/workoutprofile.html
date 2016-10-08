@@ -16,7 +16,7 @@
             </ion-col>
             <ion-col width-66>
               <ion-card class="name-back">
-                        <h2 class="name">{{weekInfo.id}}</h2>
+                        <h2 class="name" >{{coach.Description}}</h2>
                         
               </ion-card>
             </ion-col>
@@ -26,8 +26,7 @@
 
        
 
-        <ion-card  *ngFor="let wrk of wrkWeek" (click)="_descWorkout([wrk])">
-          <img class="back-img" src="img/wave.jpg">
+        <ion-card  class="back-img" *ngFor="let wrk of wrkWeek" (click)="_descWorkout([wrk])">
 
               <div class="card-title"> {{wrk.Name}}</div>
               <div class="card-subtitle"> {{wrk.Description}}</div>
